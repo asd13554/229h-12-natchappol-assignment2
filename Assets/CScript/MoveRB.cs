@@ -12,7 +12,7 @@ public class MoveRB : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float jumpforce;
     
-    void Update()
+    void FixedUpdate()
     {
         PlayerMovement = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
         
